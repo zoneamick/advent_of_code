@@ -3,7 +3,7 @@ using System.Text;
 using System.Security.Cryptography;
 using AdventReader;
 
-namespace AdventOfCode2015
+namespace AdventOfCode2022
 {
     internal class Program
     {
