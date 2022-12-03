@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventReader", "..\AdventRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02", "02\02.csproj", "{0B888A72-A8B3-4CEC-8F43-DE7CC4EC05C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03", "03\03.csproj", "{0B4EDBC8-4928-410C-B069-9932385A2A8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0B888A72-A8B3-4CEC-8F43-DE7CC4EC05C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B888A72-A8B3-4CEC-8F43-DE7CC4EC05C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B888A72-A8B3-4CEC-8F43-DE7CC4EC05C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4EDBC8-4928-410C-B069-9932385A2A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4EDBC8-4928-410C-B069-9932385A2A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4EDBC8-4928-410C-B069-9932385A2A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4EDBC8-4928-410C-B069-9932385A2A8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
