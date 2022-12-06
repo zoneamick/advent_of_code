@@ -1,36 +1,33 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Net.Http.Headers;
+using System.Runtime.Serialization;
 
 namespace AdventReader
 {
     public class Reader
     {
+        private const string _url = "https://adventofcode.com/";
         private readonly string _file;
+        private string _text;
         public Reader()
         {
             _file = GetFile();
-            if (String.IsNullOrEmpty(_file)) throw new ReaderException("No .txt file available.");
+            if (String.IsNullOrEmpty(_file))
+            {
+                throw new ReaderException("No .txt file available.");
+            }
+            ReadText();
         }
 
-        public string Read()
+        private void ReadText()
         {
             using (var sr = new StreamReader(_file))
             {
-                return sr.ReadToEnd();
+                _text = sr.ReadToEnd();
             }
         }
-        public List<string> ReadLines()
-        {
-            using (var sr = new StreamReader(_file))
-            {
-                List<string> lines = new List<string>();
-                string? line;
-                while ((line = sr.ReadLine()) != null)
-                {
-                    lines.Add(line);
-                }
-                return lines;
-            }
-        }
+        public string Read() => _text;
+        public char[] ReadChars() => _text.ToCharArray();
+        public IEnumerable<string> ReadLines() => _text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
         private string GetFile() => Directory.GetFiles(Environment.CurrentDirectory, "*.txt").FirstOrDefault();
 
     }
