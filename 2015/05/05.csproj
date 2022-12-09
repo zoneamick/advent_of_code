@@ -9,14 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\AdventExtensions\AdventExtensions.csproj" />
     <ProjectReference Include="..\..\AdventReader\AdventReader.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="z_puzzle.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="puzzle.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -27,7 +27,7 @@ namespace AdventReader
         }
         public string Read() => _text;
         public char[] ReadChars() => _text.ToCharArray();
-        public IEnumerable<string> ReadLines() => _text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+        public List<string> ReadLines() => _text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).ToList();
         private string GetFile() => Directory.GetFiles(Environment.CurrentDirectory, "*.txt").FirstOrDefault();
 
     }
